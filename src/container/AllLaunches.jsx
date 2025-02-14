@@ -600,14 +600,13 @@ const App = () => {
         functionName: 'getCurrentRound',
         chainId: chainId
       })
-      if (Number(_currentId) <= 0) return;
-      const _lotteryInfo = await readContract(config, {
+      const _lotteryStartTime = await readContract(config, {
         address: getLotteryAddress(chainId),
         abi: LotteryAbi,
-        functionName: 'getRoundData',
-        args: [Number(_currentId)],
+        functionName: 'lotteryStartTime',
         chainId: chainId
       })
+      setLotteryStartTime(Number(_lotteryStartTime))
 
       const _owner = await readContract(config, {
         address: getLotteryAddress(chainId),
@@ -615,11 +614,14 @@ const App = () => {
         functionName: 'owner',
         chainId: chainId
       })
+      setOwner(_owner)
 
-      const _lotteryStartTime = await readContract(config, {
+      if (Number(_currentId) <= 0) return;
+      const _lotteryInfo = await readContract(config, {
         address: getLotteryAddress(chainId),
         abi: LotteryAbi,
-        functionName: 'lotteryStartTime',
+        functionName: 'getRoundData',
+        args: [Number(_currentId)],
         chainId: chainId
       })
 
@@ -630,9 +632,6 @@ const App = () => {
         args: [Number(_currentId)],
         chainId: chainId
       })
-
-      setOwner(_owner)
-      setLotteryStartTime(Number(_lotteryStartTime))
 
       setCurrentDate(_lotteryInfo[1])
       setCurrentId(Number(_currentId))
@@ -721,9 +720,6 @@ const App = () => {
           <TopBar />
           <div className="max-w-7xl m-auto pt-32 pb-24 px-4 sm:px-12 sm:py-6">
             <div className="text-center mb-5">
-              {/* <h1 className="text-3xl font-bold text-gradient-golden mb-2">
-                STARWIN
-              </h1> */}
               <img src={logo1} alt="logo1" className="w-[300px] h-[100px] m-auto" />
               <div className="space-y-2">
                 <p>
@@ -748,40 +744,14 @@ const App = () => {
                 </p>
               </div>
             </div>
+            {lotteryStartTime * 1000 > currentTime && (
+              <div className="my-6 flex flex-col m-auto justify-center border border-golden rounded-[20px]">
+                <div className="flex flex-col items-center text-center p-4 bg-[#ecc440]/10 rounded-lg shadow-lg">
+                  <div className="text-xl text-[#ff0000]">It's not started yet. It will start soon.</div>
+                </div>
+              </div>
+            )}
 
-            {/* {owner == address && sevenLotteryHistory && sevenLotteryHistory.map((lottery, index) => {
-              const lotterysetStartTime = Number(lottery[0]) * 1000 + opentime * 1000; // Convert to milliseconds
-              const lotterysetEndTime = Number(lottery[1]) * 1000; // Calculate end time
-              const shouldShowLottery =
-                (lottery[3] === false && currentId === lottery.roundNumber && currentTime >= lotterysetStartTime && currentTime <= lotterysetEndTime) ||
-                (lottery[3] === false && lottery.roundNumber < currentId);
-
-              return (
-                shouldShowLottery && (
-                  <div className="my-6 flex flex-col items-center justify-center border border-golden rounded-[20px] p-6 bg-[#1a1a1a]">
-                    <div className="text-center text-xl text-white">Admin Panel</div>
-                    <div key={index} className="my-4 w-full max-w-md p-4 border border-golden rounded-lg bg-[#2a2a2a] shadow-lg">
-                      <h3 className="text-lg font-bold text-golden mb-2">Set Winning Number for Round {lottery.roundNumber}</h3>
-                      <div className="flex flex-row items-center justify-center" >
-                        <input
-                          type="text"
-                          value={winningNumbers[index] || ''}
-                          onChange={(e) => handleInputChange(index, e.target.value)}
-                          className="w-full border border-golden rounded px-2 py-1 mr-2 text-white"
-                          placeholder="Enter number"
-                        />
-                        <button
-                          onClick={() => handleSetWinningNumber(index, lottery.roundNumber)}
-                          className="w-full rounded-full bg-golden px-4 py-2 text-black font-semibold hover:bg-[#d4af37] transition-colors"
-                        >
-                          Set
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                )
-              );
-            })} */}
             {owner == address && adminLotteryInfo &&
               <div className="my-6 flex flex-col m-auto justify-center border border-golden rounded-[20px]">
                 <div className="flex flex-col items-center text-center p-4 bg-[#ecc440]/10 rounded-lg shadow-lg">
@@ -1167,7 +1137,7 @@ const App = () => {
             </div>
 
             <div className="flex justify-center">
-              <button class="rounded-full bg-golden px-4 py-3 text-black mb-2" onClick={() => addMoreTicket()}>
+              <button disabled={lotteryStartTime * 1000 > currentTime} className={`rounded-full bg-golden px-4 py-3 text-black mb-2 ${lotteryStartTime * 1000 > currentTime ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={() => addMoreTicket()}>
                 {tickets.length > 0 ? 'Add Ticket' : 'Add Ticket'}
               </button>
             </div>

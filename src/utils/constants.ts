@@ -22,11 +22,11 @@ export const arbWeb3Client = new Web3(new Web3.providers.HttpProvider(PROVIDER_U
 export const avaxWeb3Client = new Web3(new Web3.providers.HttpProvider(PROVIDER_URL_AVAX))
 export const amoyWeb3Client = new Web3(new Web3.providers.HttpProvider(PROVIDER_URL_AMOY))
 export const web3Clients = {
-    //56: web3ClientBsc,
+    56: web3ClientBsc,
     //80002: amoyWeb3Client,
     // 97: web3ClientTestBsc,
     // 1: web3Client,
-    137: polWeb3Client,
+    //137: polWeb3Client,
     // 8453: baseWeb3Client,
     // 42161: arbWeb3Client,
     // 43114: avaxWeb3Client,
@@ -151,8 +151,8 @@ export const apiKeys = {
     97: 'Y7TXAF2H8KCPY7AXFT7DSTBFUVH794ZCST',
     80002: 'Y7TXAF2H8KCPY7AXFT7DSTBFUVH794ZCST'
 }
-//export const usdtAddress = '0x55d398326f99059ff775485246999027b3197955'
-export const usdtAddress = '0x0d124116651bbD9f71c51e975324574c20797c64'
+export const usdtAddress = '0x55d398326f99059ff775485246999027b3197955'
+//export const usdtAddress = '0x0d124116651bbD9f71c51e975324574c20797c64'
 export const chainNames = {
     1: 'eth',
     8453: 'base',
