@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="70" viewBox="0 0 400 70" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.3</desc>
+<defs>
+</defs>
+
+<g transform="matrix(1 0 0 1 200 30)" style=""  ><path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M-176.01-12.17C-176.01-14.18-173.99-16.20-167.94-16.20C-162.89-16.20-160.81-14.18-160.20-13.18C-159.26-11.49-158.19-10.48-156.17-10.48L-147.76-10.48C-146.08-10.48-145.07-11.49-145.07-13.18C-145.07-19.90-152.47-27.30-167.94-27.30C-184.42-27.30-191.48-20.24-191.48-12.17C-191.48 6.67-158.86 0.28-158.86 7.01C-158.86 9.02-161.21 11.38-167.94 11.38C-174.67 11.38-176.69 9.36-177.69 7.68C-178.64 6.06-179.71 4.99-181.73 4.99L-190.14 4.99C-191.82 4.99-192.83 6.00-192.83 7.68C-192.83 15.08-185.43 22.48-167.94 22.48C-150.79 22.48-143.39 15.08-143.39 7.01C-143.39-11.83-176.01-5.44-176.01-12.17Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+  <path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M-93.94-23.60C-93.94-24.95-94.95-25.96-96.30-25.96L-139.35-25.96C-140.70-25.96-141.70-24.95-141.70-23.60L-141.70-16.88C-141.70-15.53-140.70-14.52-139.35-14.52L-125.22-14.52L-125.22 18.78C-125.22 20.12-124.21 21.13-122.87 21.13L-112.78 21.13C-111.43 21.13-110.42 20.12-110.42 18.78L-110.42-14.52L-96.30-14.52C-94.95-14.52-93.94-15.53-93.94-16.88Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+  <path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M-55.40 18.78C-54.86 20.12-53.72 21.13-52.37 21.13L-40.93 21.13C-39.59 21.13-38.65 20.12-39.25 18.78L-58.09-23.67C-58.69-25.02-59.77-25.96-61.11-25.96L-74.91-25.96C-76.25-25.96-77.33-24.95-77.93-23.60L-96.77 18.78C-97.37 20.12-96.43 21.13-95.09 21.13L-84.32 21.13C-82.98 21.13-81.83 20.12-81.30 18.78L-78.94 12.72L-57.75 12.72ZM-68.51-11.83L-67.84-11.83L-62.46 1.62L-74.23 1.62Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+  <path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M5.68 0.28C5.68 0.28 14.77-1.74 14.77-10.48C14.77-18.89 7.70-25.96-7.10-25.96L-31.65-25.96C-33.00-25.96-34.01-24.95-34.01-23.60L-34.01 18.78C-34.01 20.12-33.00 21.13-31.65 21.13L-21.56 21.13C-20.21 21.13-19.21 20.12-19.21 18.78L-19.21 4.99L-10.46 4.99C-6.76 4.99-5.48 6.33-4.41 8.35L1.31 18.78C2.05 20.12 2.99 21.13 5.68 21.13L16.11 21.13C17.79 21.13 18.33 19.79 17.79 18.78L12.08 8.35C8.71 2.30 5.68 0.95 5.68 0.95ZM-19.21-5.78L-19.21-15.19L-7.10-15.19C-2.72-15.19-0.71-13.18-0.71-10.48C-0.71-7.79-2.72-5.78-7.10-5.78Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+  <path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M52.44-25.96C50.76-25.96 49.75-24.95 49.41-23.60L43.02 2.97L42.35 2.97L35.28-23.60C34.95-24.95 33.94-25.96 32.26-25.96L21.49-25.96C20.48-25.96 19.41-24.95 19.81-23.60L31.58 18.78C31.99 20.12 32.93 21.13 34.61 21.13L48.06 21.13C49.75 21.13 50.76 20.12 51.09 18.78L58.16-7.12L58.83-7.12L65.89 18.78C66.23 20.12 67.24 21.13 68.92 21.13L82.37 21.13C84.05 21.13 85.00 20.12 85.40 18.78L97.17-23.60C97.58-24.95 96.50-25.96 95.49-25.96L84.73-25.96C83.05-25.96 82.04-24.95 81.70-23.60L74.64 2.97L73.96 2.97L67.57-23.60C67.24-24.95 66.23-25.96 64.55-25.96Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+  <path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M132.62-23.60C132.62-24.95 131.61-25.96 130.27-25.96L102.69-25.96C101.34-25.96 100.33-24.95 100.33-23.60L100.33-16.88C100.33-15.53 101.34-14.52 102.69-14.52L109.08-14.52L109.08 9.70L102.69 9.70C101.34 9.70 100.33 10.71 100.33 12.05L100.33 18.78C100.33 20.12 101.34 21.13 102.69 21.13L130.27 21.13C131.61 21.13 132.62 20.12 132.62 18.78L132.62 12.05C132.62 10.71 131.61 9.70 130.27 9.70L123.88 9.70L123.88-14.52L130.27-14.52C131.61-14.52 132.62-15.53 132.62-16.88Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+  <path fill="url(#CUSTOM_SVGID_undefined)" opacity="1" d="M174.33 0.95L157.51-23.60C156.84-24.61 155.50-25.96 153.81-25.96L142.38-25.96C141.03-25.96 140.02-24.95 140.02-23.60L140.02 18.78C140.02 20.12 141.03 21.13 142.38 21.13L152.47 21.13C153.81 21.13 154.82 20.12 154.82 18.78L154.82-5.78L155.50-5.78L172.31 18.78C172.99 19.79 174.33 21.13 176.01 21.13L187.45 21.13C188.79 21.13 189.80 20.12 189.80 18.78L189.80-23.60C189.80-24.95 188.79-25.96 187.45-25.96L177.36-25.96C176.01-25.96 175.00-24.95 175.00-23.60L175.00 0.95Z"/>
+    <linearGradient id="CUSTOM_SVGID_undefined" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -194.995 -38.00766725078334)"  x1="0" y1="0" x2="389.99" y2="76.01533450156668">
+      <stop  offset="0" style="stop-color:#8f5e25;stop-opacity:undefined"/><stop  offset="0.5" style="stop-color:#fbf4a1;stop-opacity:undefined"/><stop  offset="1" style="stop-color:#8f5e25;stop-opacity:undefined"/>
+    </linearGradient>
+
+  </g></svg>
