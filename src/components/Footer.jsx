@@ -103,10 +103,10 @@ const Footer = () => {
               </h2>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <a rel="noopener noreferrer" className="wallet-btn flex items-center justify-center w-14 h-14 rounded-full p-2" href="https://info@starwin.money/" target="_blank">
+              <a rel="noopener noreferrer" className="wallet-btn flex items-center justify-center w-14 h-14 rounded-full p-2" href="mailto:info@starwin.money" target="_blank">
                 <img src={mailIcon} alt="Email" className="w-10" />
               </a>
-              <a rel="noopener noreferrer" className="wallet-btn flex items-center justify-center w-14 h-14 rounded-full p-2" href="https://t.me/" target="_blank">
+              <a rel="noopener noreferrer" className="wallet-btn flex items-center justify-center w-14 h-14 rounded-full p-2" href="https://t.me/infostarwin" target="_blank">
                 <img src={telegramIcon} alt="Telegram" className="w-10" />
               </a>
             </div>
