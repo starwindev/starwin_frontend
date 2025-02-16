@@ -1278,7 +1278,7 @@ const App = () => {
                       <div className="grid grid-cols-6 bg-[#0d0d0d] rounded-[25px] items-center text-xs sm:text-sm mb-4 text-white">
                         <div className="uppercase text-center px-2 py-3 col-span-3 font-bold text-lg">
                           {(() => {
-                            const date = new Date(Number(sevenLotteryHistory[sevenLotteryHistory.length - 1][1]) * 1000);
+                            const date = new Date(Number(sevenLotteryHistory[sevenLotteryHistory.length - 2][1]) * 1000);
                             const day = new Intl.DateTimeFormat('en-CR', { day: '2-digit', timeZone: 'America/Costa_Rica' }).format(date);
                             const month = new Intl.DateTimeFormat('en-CR', { month: '2-digit', timeZone: 'America/Costa_Rica' }).format(date);
                             const year = new Intl.DateTimeFormat('en-CR', { year: 'numeric', timeZone: 'America/Costa_Rica' }).format(date);
@@ -1287,7 +1287,7 @@ const App = () => {
                           })()}
                         </div>
                         <div className="uppercase text-center px-2 py-3 col-span-3 font-bold text-lg">
-                          {(((Number(sevenLotteryHistory[sevenLotteryHistory.length - 1][1]) - Number(lotteryStartTime)) / timeOffset === currentId) ? 'Running' : sevenLotteryHistory[sevenLotteryHistory.length - 1][3] === true ? Number(sevenLotteryHistory[sevenLotteryHistory.length - 1][2]).toString().padStart(2, '0') : 'Not Set')}
+                          {(((Number(sevenLotteryHistory[sevenLotteryHistory.length - 2][1]) - Number(lotteryStartTime)) / timeOffset === currentId) ? 'Running' : sevenLotteryHistory[sevenLotteryHistory.length - 2][3] === true ? Number(sevenLotteryHistory[sevenLotteryHistory.length - 2][2]).toString().padStart(2, '0') : 'Not Set')}
                         </div>
                       </div>
                     )}
@@ -1299,7 +1299,7 @@ const App = () => {
                         </div>
                       )}
                       {sevenLotteryHistory &&
-                        [...sevenLotteryHistory].slice(0, sevenLotteryHistory.length - 1)
+                        [...sevenLotteryHistory].slice(0, sevenLotteryHistory.length - 2)
                           .sort((a, b) => b[0].toString() - a[0].toString())
                           .map(lottery => (
                             <div className="grid grid-cols-6 bg-[#0d0d0d] rounded-[25px] items-center text-xs sm:text-sm">
