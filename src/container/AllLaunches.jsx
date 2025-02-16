@@ -315,6 +315,25 @@ const App = () => {
 
   }
 
+  const handleWithdrawFunds = async () => {
+    try {
+      const withdraw = await writeContract(config, {
+        address: getLotteryAddress(chainId),
+        abi: LotteryAbi,
+        functionName: 'withdrawFunds',
+        args: [],
+        chainId: Number(chainId),
+        gasLimit: 150_000_000n
+      })
+      await waitForTransaction(config, {
+        hash: withdraw
+      })
+      toast.success('Withdraw Funds Transaction confirmed successfully.');
+    } catch (error) {
+      toast.error('Transaction was cancelled by the user.');
+    }
+  }
+
   const approveHandler = async () => {
     if (totalTicketAmount === 0) {
       toast.error('Please add tickets first.')
@@ -991,6 +1010,12 @@ const App = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="flex flex-col">
+                      <button className="bg-[#f3cc2f] rounded-[25px] lg:px-8 px-2.5 py-5" onClick={() => handleWithdrawFunds()} style={{ boxShadow: '#676767 0px 5px 10px 0px' }}>
+                        Withdraw Funds
+                      </button>
+                    </div>
+
                   </div>
                 </div>
               </div>
