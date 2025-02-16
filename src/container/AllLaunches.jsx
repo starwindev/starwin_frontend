@@ -1288,7 +1288,7 @@ const App = () => {
                           })()}
                         </div>
                         <div className="uppercase text-center px-2 py-3 col-span-3 font-bold text-lg">
-                          {sevenLotteryHistory[sevenLotteryHistory.length - 1][3] === true ? Number(sevenLotteryHistory[sevenLotteryHistory.length - 1][2]).toString().padStart(2, '0') : 'Not Set'}
+                          {(((Number(sevenLotteryHistory[sevenLotteryHistory.length - 1][1]) - Number(lotteryStartTime)) / timeOffset === currentId) ? 'Running' : sevenLotteryHistory[sevenLotteryHistory.length - 1][3] === true ? Number(sevenLotteryHistory[sevenLotteryHistory.length - 1][2]).toString().padStart(2, '0') : 'Not Set')}
                         </div>
                       </div>
                     )}
