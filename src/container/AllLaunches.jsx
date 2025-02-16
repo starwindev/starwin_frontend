@@ -1062,7 +1062,7 @@ const App = () => {
               </div>
               <div className="flex justify-center flex-col bg-[#333333] rounded-[20px] w-[300px] mx-auto mt-4 p-4">
                 {/* <div className="text-xl text-white flex justify-center">Round # {currentId + timeOption}</div> */}
-                <div className="text-xl text-white flex justify-center">{Number(lotteryInfo[1]) + Number(timeOption) * timeOffset - 1 * 60 * 60 > currentTime / 1000 ? 'Tickets Closing in' : 'Tickets Closed'}</div>
+                <div className="text-xl text-white flex justify-center">{lotteryInfo && Number(lotteryInfo[1]) + Number(timeOption) * timeOffset - 1 * 60 * 60 > currentTime / 1000 ? 'Tickets Closing in' : 'Tickets Closed'}</div>
                 <div className="text-xl text-white flex justify-center">
                   {lotteryInfo && (Number(lotteryInfo[1]) + Number(timeOption) * timeOffset - 1 * 60 * 60) > currentTime / 1000 && (
                     <BigCountDown futureDate={Number(lotteryInfo[1]) + Number(timeOption) * timeOffset - 1 * 60 * 60} />
