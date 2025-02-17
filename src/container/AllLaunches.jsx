@@ -1365,7 +1365,7 @@ const App = () => {
                               </div>
                             </div>
                             <div className="uppercase text-center px-2 py-3 col-span-2">
-                              {ticket.isDouble == 0 ? `${Number(ticket.number)}` : ticket.isDouble == 1 ? `${parseInt(Number(ticket.number) / 10)}` + " X" : "X " + `${Number(ticket.number) % 10}`}
+                              {ticket.isDouble == 0 ? `${Number(ticket.number).toString().padStart(2, '0')}` : ticket.isDouble == 1 ? `${parseInt(Number(ticket.number) / 10)}` + " X" : "X " + `${Number(ticket.number) % 10}`}
                             </div>
                             <div className={`uppercase text-center px-2 py-3 ${currentId == ticket.roundNumber ? 'text-[#f3cc2f]' : sevenLotteryHistory[Number(ticket.roundNumber) - 1][3] == false ? "text-[#ffffff]" : ticket.isWin ? 'text-[#32CD32]' : 'text-[#c51f1f]'}`}>
                               {currentId == ticket.roundNumber ? 'Pending' : sevenLotteryHistory[Number(ticket.roundNumber) - 1][3] == false ? "Not Set" : ticket.isWin ? 'WIN' : 'LOSE'}
